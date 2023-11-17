@@ -1,0 +1,22 @@
+{
+  "name": "nextjs-v13",
+  "private": true,
+  "workspaces": [
+    "./yApp",
+    "./xApp",
+    "./shared"
+  ],
+  "version": "0.0.0",
+  "scripts": {
+    "start": "concurrently \"npm --prefix yApp run dev\" \"npm --prefix xApp run dev\"",
+    "build": "concurrently \"npm --prefix yApp run build\" \"npm --prefix xApp run build\"",
+    "serve": "concurrently \"npm --prefix yApp run start\" \"npm --prefix xApp run start\""
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.16",
+    "@mui/material": "^5.14.17",
+    "concurrently": "7.6.0"
+  }
+}

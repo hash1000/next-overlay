@@ -7,6 +7,8 @@ export default function AboutPage() {
         <div>
         <h1>About Us</h1>
         <h1>branch merge feature</h1>        
+        <h1>branch merge feature 2</h1>
+        
         </div>
         </main>
     );
